@@ -1,0 +1,157 @@
+/* ====== 01-settings #COLORS ====== */
+/* ====== 01-settings #FONTS ====== */
+@font-face {
+  font-family: montserrat;
+  src: url(font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: openSans;
+  src: url(font/OpenSans-Light.ttf);
+}
+/* 32 / 16 */
+/* 28 / 16 */
+/* 24 / 16 */
+/* 20 / 16 */
+/* 18 / 16 */
+/* 16 / 16 */
+/* ====== 01-settings #RESPONSIVE - breakpoints ====== */
+/*  576 / 16 */
+/*  768 / 16 */
+/*  992 / 16 */
+/* 1200 / 16 */
+/* ====== 02-tools #MIXINS ====== */
+/* ====== 03-generic #reset ====== */
+/* Remove margins and padding. */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove trailing margins from nested lists. */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+/* Remove the gap between audio, canvas, iframes, images, videos and the bottom */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* Remove default border on fieldsets and Reset Chrome and Firefox behaviour which sets a `min-width: min-content;` on fieldsets. */
+fieldset {
+  border: 0;
+  /* [1] */
+  min-width: 0;
+  /* [2] */
+}
+
+/* Remove default table spacing. */
+table {
+  border-collapse: collapse;
+}
+
+/* ====== 03-generic #SHARED ====== */
+html,
+body {
+  height: 100%;
+}
+
+/* ====== Media Queries ====== */
+@media only screen and (min-width: 75em) {
+  body {
+    max-width: 75em;
+  }
+}
+/* ====== Overall page ====== */
+body {
+  background-color: #000000;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1 {
+  font-family: montserrat, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 4rem;
+  color: #E5E5E5;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: openSans, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #E5E5E5;
+  font-weight: 100;
+}
+
+/* ====== Intro page ====== */
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: ". right";
+  background-color: #000000;
+  height: 100vh;
+}
+.intro .intro__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin-left: 5%;
+}
+.intro .intro__content {
+  z-index: 1;
+  grid-area: right;
+  align-self: center;
+}
+.intro .intro__content h3 {
+  margin-top: 2rem;
+}
+.intro .intro__content .intro__links {
+  margin-top: 2rem;
+}
+.intro .intro__content img {
+  width: 47px;
+  margin-left: 1rem;
+}
+.intro .intro__content a {
+  text-decoration: none;
+  color: #5C5C5C;
+  font-size: 1rem;
+  font-family: montserrat, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #E5E5E5;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.intro .intro__content a:hover {
+  background-color: #b2b2b2;
+  color: #292929;
+}
+
+/*# sourceMappingURL=style.css.map */
